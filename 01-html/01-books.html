@@ -7,6 +7,7 @@
     <title>Exercise 01 - Books</title>
     <!-- It's generally not recommended to have CSS in the HTML file,  
      but since we haven't covered CSS yet in class, I'll add styles this way this one time -->
+    <!--img links were differing sizes, added img style to homogenize size -->
     <style>
       table {
         border: 1px solid black;
@@ -17,9 +18,43 @@
         padding: 6px;
         border: 1px solid black;
       }
+      
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
     <!-- Add your code here -->
+     <ul>
+      <li><a href="#books">ASOIF Books</a></li>
+      <li><a href="#covers">First Edition Covers</a></li>
+      <li><a href="#pov">Table of POV Characters</a></li>
+     </ul>
+    <h1>A Song of Ice and Fire - George R.R. Martin</h1>
+    <h2 id="books">A Song of Ice and Fire universe</h2>
+    <ul>
+      <li>A Song of Ice and Fire series:</li>
+      <ol>
+        <li>A Game of Thones (1996)</li>
+        <li>A Clash of Kings (1998)</li>
+        <li>A Stome of Swords (2000)</li>
+        <li>A Feast for Crows (2005)</li>
+        <li>A Dance with Dragons (2011)</li>
+      </ol>
+      <li>A Knight of the Seven Kingdoms (2015)</li>
+      <ol>
+        <li>The Hedge Knight (1998)</li>
+        <li>The Sworn Sword (2003)</li>
+        <li>The Mystery Knight (2010)</li>
+      </ol>
+      <li>Fire & Blood (2018)</li>
+    </ul>
+    <h2 id="covers">First Edition Covers</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg">
   </body>
 </html>
