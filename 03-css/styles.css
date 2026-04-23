@@ -147,7 +147,6 @@ fieldset {
   background-color: var(--table-emphasis-background);
 }
 
-
 /*Form IRA Roth Calc */
 
 .form-container {
@@ -177,7 +176,7 @@ fieldset {
   width: 45%;
   border: 1px solid var(--gray-border);
   border-radius: 6px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .form-radios {
@@ -185,24 +184,23 @@ fieldset {
   margin-bottom: 0.75;
 }
 .form-note {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-top: 2rem;
 }
 
 .form-note a {
   color: var(--form-heading);
-  
 }
 
 .form-element {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .btn {
   display: inline-block;
   width: 49%;
   border: 0;
-  padding: .65rem 1rem;
+  padding: 0.65rem 1rem;
   margin-top: 1rem;
   border-radius: 6px;
 }
@@ -219,4 +217,3 @@ fieldset {
 .btn-submit:hover {
   background-color: var(--form-accent);
 }
-
