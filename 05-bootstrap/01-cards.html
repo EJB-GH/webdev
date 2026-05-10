@@ -13,43 +13,35 @@
   </head>
   <body class="bg-light">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Simple Game Showcase</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dino Game</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Untitled Goose Game</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Flappy Bird</a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">Dino Game</a>
+              <a class="nav-link" href="#">Untitled Goose Game</a>
+              <a class="nav-link" href="#">Flappy Bird</a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
+    <h1 class="text-center mb-4">Simple Game Showcase</h1>
     <main class="container my-4">
-      <h1 class="text-center mb-4">Simple Game Showcase</h1>
-
       <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
+        <section class="col-lg-4 mb-3" id="dino">
+          <div class="card">
             <div class="text-center p-3">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chromium_T-Rex-error-offline.svg/250px-Chromium_T-Rex-error-offline.svg.png"
@@ -57,8 +49,8 @@
                 alt="Chrome Dino Game"
               />
             </div>
-            <div class="card-body d-flex flex-column">
-              <h2 class="card-title">Chrome Dino Game</h2>
+            <div class="card-body">
+              <h2 class="card-title text-center">Chrome Dino Game</h2>
               <p class="card-text">
                 The Chrome Dino Game was released in 2014 by Google. It appears
                 when users lose internet connection in Chrome.
@@ -79,10 +71,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
+        <section class="col-lg-4 mb-3" id="goose">
+          <div class="card">
             <div class="text-center p-3">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/b/b2/Untitled_Goose_Game_Cover_art.jpg"
@@ -90,8 +82,8 @@
                 alt="Untitled Goose Game"
               />
             </div>
-            <div class="card-body d-flex flex-column">
-              <h2 class="card-title">Untitled Goose Game</h2>
+            <div class="card-body">
+              <h2 class="card-title text-center">Untitled Goose Game</h2>
               <p class="card-text">
                 Untitled Goose Game is a stealth puzzle game developed by House
                 House. Players take the role of a mischievous goose in a quaint
@@ -114,10 +106,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
+        <section class="col-lg-4 mb-3" id="flappy">
+          <div class="card">
             <div class="text-center p-3">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png"
@@ -125,8 +117,8 @@
                 alt="Flappy Bird"
               />
             </div>
-            <div class="card-body d-flex flex-column">
-              <h2 class="card-title">Flappy Bird</h2>
+            <div class="card-body">
+              <h2 class="card-title text-center">Flappy Bird</h2>
               <p class="card-text">
                 Flappy Bird is a mobile game developed by Vietnamese programmer
                 Dong Nguyen and released in 2013. It became a viral sensation
@@ -149,7 +141,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
 
@@ -254,7 +246,7 @@
       </div>
     </div>
 
-    <footer class="bg-dark text-light text-center py-3">
+    <footer class="bg-dark text-white text-center py-3">
       <p class="mb-0">&copy; 2026 Simple Game Showcase</p>
     </footer>
   </body>
