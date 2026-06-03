@@ -38,6 +38,8 @@ Upon trying to use the 'load new cat facts' button on the cat facts page, the in
 Then, the container load.
 I believe the issue is that the setAttribute function sets the loading container to display-none. So on the reload, the container starts as a display-none. I believe this issue may be outside this class scope, and I dont atually know how to handle it
 
+#### on review I noticed the loader gif does play when you refresh the page so this perhaps is not an issue
+
 Original Code
 
 ```javascript
@@ -48,4 +50,66 @@ Updated Code
 
 ```javascript
 loader.src = "/images/loader.gif";
+```
+
+### Issue 3: Missing Fieldset/improper div use?
+
+The section of checkboxes for varying cat breeds are improperly using a div/p structure despite leading with a form-fieldset class at the start of the div. The fix involves using the proper fieldset + legend structure we saw early on in form creation
+
+Original Code
+
+```html
+<div class="form-fieldset form-element-container">
+  <p class="form-label">What breeds would you like to learn?</p>
+  <div>
+    <input type="checkbox" id="siamese" name="breed1" value="siamese" />
+    <label for="siamese">Siamese Cat</label>
+  </div>
+  <div>
+    <input
+      type="checkbox"
+      id="british-shorthair"
+      name="breed2"
+      value="british-shorthair"
+    />
+    <label for="british-shorthair">British Shorthair</label>
+  </div>
+  <div>
+    <input type="checkbox" id="maine-coon" name="breed3" value="maine-coon" />
+    <label for="maine-coon">Maine Coon</label>
+  </div>
+  <div>
+    <input type="checkbox" id="persian-cat" name="breed4" value="persian-cat" />
+    <label for="persian-cat">Persian Cat</label>
+  </div>
+</div>
+```
+
+Updated Code
+
+```html
+<fieldset class="form-element-container">
+  <legend class="form-label">What breeds would you like to learn?</legend>
+  <div>
+    <input type="checkbox" id="siamese" name="breed1" value="siamese" />
+    <label for="siamese">Siamese Cat</label>
+  </div>
+  <div>
+    <input
+      type="checkbox"
+      id="british-shorthair"
+      name="breed2"
+      value="british-shorthair"
+    />
+    <label for="british-shorthair">British Shorthair</label>
+  </div>
+  <div>
+    <input type="checkbox" id="maine-coon" name="breed3" value="maine-coon" />
+    <label for="maine-coon">Maine Coon</label>
+  </div>
+  <div>
+    <input type="checkbox" id="persian-cat" name="breed4" value="persian-cat" />
+    <label for="persian-cat">Persian Cat</label>
+  </div>
+</fieldset>
 ```
